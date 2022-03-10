@@ -15,6 +15,10 @@ const prevBtn = document.querySelectorAll("form .previous-btn");
 // const showForm = document.getElementById("conform_the_details");
 
 // console.log(showForm);
+//-------------------------------------------------------------------------------------------------------------------------------
+
+const fName=document.getElementById("firstName");
+console.log(fName);
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
@@ -50,8 +54,10 @@ form.addEventListener("submit",handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
+
   console.log("Submit Event Fired")
   const formdata=event.target;
+
   console.log(formdata);
   new FormData(formdata);
   // =====>immediate after new formData function constructor created
@@ -65,6 +71,8 @@ function handleFormData(event){
   console.log("formdata is created");
 
   const extratedData =[...data];
+
+  
   console.log([extratedData]);
 
   console.log(Object.prototype.toString.call(data));
