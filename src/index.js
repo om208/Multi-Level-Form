@@ -109,6 +109,7 @@ function handleFormData(event) {
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
+
 // -----------------> old method of getting data from input fillds
 
 // form.addEventListener("submit", (e) => {
